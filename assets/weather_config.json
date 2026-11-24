@@ -1,0 +1,13 @@
+{
+  "irrigation": {
+    "rainProbabilityThreshold": 60,
+    "precipitationSumThresholdMm": 5.0
+  },
+  "spray": {
+    "windSpeedMaxKmH": 15.0,
+    "rainProbabilityThreshold": 40
+  },
+  "heat": {
+    "temperatureMaxThresholdC": 38.0
+  }
+}

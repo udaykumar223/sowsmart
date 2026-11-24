@@ -1,0 +1,136 @@
+{
+  "@@locale": "te",
+
+  "appTitle": "సౌస్మార్ట్",
+  "tagline": "వాతావరణ ఆధారిత పంట ప్రణాళిక మరియు లాభాల ట్రాకర్",
+  "login": "లాగిన్",
+  "signInWithGoogle": "Google తో సైన్ ఇన్ చేయండి",
+  "continueDemo": "డెమో మోడ్‌లో కొనసాగండి",
+  "signOut": "సైన్ అవుట్",
+
+  "settings": "సెట్టింగ్‌లు",
+  "language": "భాష",
+  "selectLanguage": "భాషను ఎంచుకోండి",
+  "english": "English",
+  "telugu": "తెలుగు",
+  "themeMode": "థీమ్ మోడ్",
+  "themeLight": "లైట్",
+  "themeDark": "డార్క్",
+  "themeSystem": "సిస్టమ్ డిఫాల్ట్",
+  "dailyReminder": "రోజువారీ రిమైండర్ సమయం",
+  "notificationPermission": "నోటిఫికేషన్ అనుమతి",
+
+  "home": "హోమ్",
+  "welcome": "స్వాగతం",
+  "signedInAs": "{email} గా లాగిన్ అయ్యారు",
+  "@signedInAs": {
+    "placeholders": {
+      "email": { "type": "String" }
+    }
+  },
+
+  "todaysTasks": "నేటి పనులు",
+  "cropCalendar": "పంట క్యాలెండర్",
+  "fields": "పొలాలు",
+  "startPlanting": "విత్తనం వేయి",
+  "profitFinance": "లాభం & ఆర్థికం",
+  "activePlantings": "క్రియాశీల పంటలు",
+  "newCrop": "+ కొత్త పంట",
+  "noActivePlantings": "ఇంకా క్రియాశీల పంటలు లేవు.",
+  "startFirstPlanting": "మీ మొదటి పంట చక్రం ప్రారంభించడానికి 'విత్తనం వేయి' నొక్కండి.",
+
+  "addField": "పొలం జోడించు",
+  "editField": "పొలం సవరించు",
+  "fieldName": "పొలం పేరు",
+  "areaAcres": "విస్తీర్ణం (ఎకరాలు)",
+  "soilType": "మట్టి రకం",
+  "soilLoamy": "గోరు నేల",
+  "soilClay": "బంకమట్టి నేల",
+  "soilSandy": "ఇసుక నేల",
+  "useMyLocation": "నా స్థానాన్ని వాడు",
+  "locationAcquired": "స్థానం పొందబడింది",
+  "noFields": "ఇంకా పొలాలు జోడించబడలేదు.",
+  "addFirstField": "మీ మొదటి పొలం జోడించడానికి '+' నొక్కండి.",
+  "deleteField": "పొలం తొలగించు",
+  "confirmDeleteField": "ఈ పొలం మరియు దాని అన్ని పంటలను తొలగించాలా?",
+
+  "selectCrop": "పంటను ఎంచుకోండి",
+  "selectField": "పొలాన్ని ఎంచుకోండి",
+  "sowingDate": "విత్తన తేదీ",
+  "seasonLabel": "సీజన్ పేరు",
+  "schedulePreview": "షెడ్యూల్ ముందుచూపు",
+  "createPlanting": "పంట రూపొందించు",
+  "generatingSchedule": "షెడ్యూల్ తయారవుతోంది…",
+
+  "cultivationTasks": "సాగు పనులు",
+  "stageProgress": "దశ పురోగతి",
+  "recordHarvest": "పంట కోత నమోదు చేయి",
+  "harvestCompleted": "పంట కోత పూర్తయింది",
+  "viewPL": "లాభనష్టాలు చూడు",
+  "harvestedOn": "{date} న పంట కోయబడింది",
+  "@harvestedOn": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "yieldLabel": "దిగుబడి: {qty} {unit}",
+  "@yieldLabel": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+
+  "overdueTasks": "గడువు మించిన పనులు",
+  "dueToday": "నేడు చేయవలసినవి",
+  "noPendingTasks": "నేటికి పెండింగ్ పనులు లేవు 🌱",
+  "markDone": "పూర్తయినట్లు గుర్తించు",
+  "postponeOneDay": "+1 రోజు",
+  "postponed": "వాయిదా వేయబడింది",
+  "done": "పూర్తయింది",
+  "pending": "పెండింగ్",
+
+  "weatherSummary": "నేటి వాతావరణం",
+  "skipIrrigation": "సేద్యం వద్దు",
+  "sprayWarning": "పిచికారీ హెచ్చరిక",
+  "heatAlert": "వేడి హెచ్చరిక",
+  "weatherGuidance": "మార్గదర్శకత్వం మాత్రమే — స్థానిక వ్యవసాయ శాఖతో ధృవీకరించండి.",
+
+  "addTransaction": "లావాదేవీ జోడించు",
+  "expense": "ఖర్చు",
+  "income": "ఆదాయం",
+  "cropPlanting": "పంట",
+  "costCategory": "ఖర్చు వర్గం",
+  "incomeCategory": "ఆదాయ వర్గం",
+  "amount": "మొత్తం (₹)",
+  "transactionDate": "లావాదేవీ తేదీ",
+  "notes": "గమనికలు (ఐచ్ఛికం)",
+  "saveTransaction": "లావాదేవీ సేవ్ చేయి",
+  "totalRevenue": "మొత్తం ఆదాయం",
+  "totalExpenses": "మొత్తం ఖర్చులు",
+  "netProfit": "నికర లాభం",
+  "netMargin": "నికర మార్జిన్",
+  "perAcre": "/ ఎకరా",
+  "costBreakdown": "వర్గం వారీగా ఖర్చుల వివరణ",
+  "recentTransactions": "ఇటీవలి లావాదేవీలు",
+  "noTransactions": "ఇంకా లావాదేవీలు నమోదు కాలేదు.",
+  "deleteTransaction": "లావాదేవీ తొలగించు",
+  "allCropsSeasons": "అన్ని పంటలు & సీజన్లు (మొత్తం)",
+
+  "actualHarvestDate": "అసలు కోత తేదీ",
+  "totalYield": "మొత్తం దిగుబడి",
+  "totalSaleIncome": "మొత్తం విక్రయ ఆదాయం (₹)",
+  "completeHarvest": "పంట కోత పూర్తి చేసి చక్రం మూయి",
+  "harvestNote": "పంట కోత నమోదు చేయడం ద్వారా ఈ పంట చక్రం మూయబడుతుంది మరియు విక్రయ ఆదాయం లాభాల ట్రాకర్‌లో నమోదవుతుంది.",
+
+  "cancel": "రద్దు",
+  "delete": "తొలగించు",
+  "save": "సేవ్ చేయి",
+  "confirm": "నిర్ధారించు",
+  "loading": "లోడవుతోంది…",
+  "error": "దోషం",
+  "retry": "మళ్ళీ ప్రయత్నించు",
+  "noData": "డేటా అందుబాటులో లేదు.",
+  "demoMode": "డెమో మోడ్",
+  "demoModeNote": "డేటా మెమరీలో మాత్రమే నిల్వ చేయబడుతుంది మరియు రీస్టార్ట్ అయినప్పుడు రీసెట్ అవుతుంది."
+}

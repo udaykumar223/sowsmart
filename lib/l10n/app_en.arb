@@ -1,0 +1,136 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "SowSmart",
+  "tagline": "Weather-Aware Crop Scheduler and Profit Tracker",
+  "login": "Login",
+  "signInWithGoogle": "Sign in with Google",
+  "continueDemo": "Continue in Demo Mode",
+  "signOut": "Sign Out",
+
+  "settings": "Settings",
+  "language": "Language",
+  "selectLanguage": "Select Language",
+  "english": "English",
+  "telugu": "Telugu (తెలుగు)",
+  "themeMode": "Theme Mode",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeSystem": "System Default",
+  "dailyReminder": "Daily Reminder Time",
+  "notificationPermission": "Notification Permission",
+
+  "home": "Home",
+  "welcome": "Welcome",
+  "signedInAs": "Signed in as {email}",
+  "@signedInAs": {
+    "placeholders": {
+      "email": { "type": "String" }
+    }
+  },
+
+  "todaysTasks": "Today's Tasks",
+  "cropCalendar": "Crop Calendar",
+  "fields": "Fields",
+  "startPlanting": "Start Planting",
+  "profitFinance": "Profit & Finance",
+  "activePlantings": "Active Plantings",
+  "newCrop": "+ New Crop",
+  "noActivePlantings": "No active plantings yet.",
+  "startFirstPlanting": "Tap 'Start Planting' to begin your first crop cycle.",
+
+  "addField": "Add Field",
+  "editField": "Edit Field",
+  "fieldName": "Field Name",
+  "areaAcres": "Area (acres)",
+  "soilType": "Soil Type",
+  "soilLoamy": "Loamy",
+  "soilClay": "Clay",
+  "soilSandy": "Sandy",
+  "useMyLocation": "Use My Location",
+  "locationAcquired": "Location acquired",
+  "noFields": "No fields added yet.",
+  "addFirstField": "Tap '+' to add your first field.",
+  "deleteField": "Delete Field",
+  "confirmDeleteField": "Delete this field and all its plantings?",
+
+  "selectCrop": "Select Crop",
+  "selectField": "Select Field",
+  "sowingDate": "Sowing Date",
+  "seasonLabel": "Season Label",
+  "schedulePreview": "Schedule Preview",
+  "createPlanting": "Create Planting",
+  "generatingSchedule": "Generating schedule…",
+
+  "cultivationTasks": "Cultivation Tasks",
+  "stageProgress": "Stage Progress",
+  "recordHarvest": "Record Harvest",
+  "harvestCompleted": "Harvest Completed",
+  "viewPL": "View P&L",
+  "harvestedOn": "Harvested on {date}",
+  "@harvestedOn": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "yieldLabel": "Yield: {qty} {unit}",
+  "@yieldLabel": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+
+  "overdueTasks": "Overdue Tasks",
+  "dueToday": "Due Today",
+  "noPendingTasks": "No pending tasks for today 🌱",
+  "markDone": "Mark Done",
+  "postponeOneDay": "+1 Day",
+  "postponed": "Postponed",
+  "done": "Done",
+  "pending": "Pending",
+
+  "weatherSummary": "Today's Weather",
+  "skipIrrigation": "Skip Irrigation",
+  "sprayWarning": "Spray Warning",
+  "heatAlert": "Heat Alert",
+  "weatherGuidance": "Guidance only — verify with local extension office.",
+
+  "addTransaction": "Add Transaction",
+  "expense": "Expense",
+  "income": "Income",
+  "cropPlanting": "Crop Planting",
+  "costCategory": "Cost Category",
+  "incomeCategory": "Income Category",
+  "amount": "Amount (₹)",
+  "transactionDate": "Transaction Date",
+  "notes": "Notes (optional)",
+  "saveTransaction": "Save Transaction",
+  "totalRevenue": "Total Revenue",
+  "totalExpenses": "Total Expenses",
+  "netProfit": "Net Profit",
+  "netMargin": "Net Margin",
+  "perAcre": "/ acre",
+  "costBreakdown": "Cost Breakdown by Category",
+  "recentTransactions": "Recent Transactions",
+  "noTransactions": "No transactions recorded yet.",
+  "deleteTransaction": "Delete Transaction",
+  "allCropsSeasons": "All Crops & Seasons (Overall)",
+
+  "actualHarvestDate": "Actual Harvest Date",
+  "totalYield": "Total Yield",
+  "totalSaleIncome": "Total Sale Income (₹)",
+  "completeHarvest": "Complete Harvest & Close Cycle",
+  "harvestNote": "Recording harvest will close this crop cycle and commit the sale revenue to your profit tracker.",
+
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "save": "Save",
+  "confirm": "Confirm",
+  "loading": "Loading…",
+  "error": "Error",
+  "retry": "Retry",
+  "noData": "No data available.",
+  "demoMode": "Demo Mode",
+  "demoModeNote": "Data is stored in memory only and will reset on restart."
+}

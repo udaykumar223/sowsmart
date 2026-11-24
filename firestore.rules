@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ─────────────────────────────────────────────────────
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function isValidField() {
+      let d = request.resource.data;
+      return d.keys().hasAll(['name', 'areaAcres', 'soilType', 'lat', 'lon', 'createdAt'])
+          && d.name is string && d.name.size() > 0
+          && d.areaAcres is number && d.areaAcres > 0
+          && d.soilType in ['loamy', 'clay', 'sandy'];
+    }
+
+    function isValidPlanting() {
+      let d = request.resource.data;
+      return d.keys().hasAll(['cropId', 'cropName', 'fieldId', 'sowingDate',
+                               'seasonLabel', 'status', 'expectedHarvestDate', 'createdAt'])
+          && d.cropId is string && d.cropId.size() > 0
+          && d.status in ['active', 'harvested', 'cancelled'];
+    }
+
+    function isValidTask() {
+      let d = request.resource.data;
+      return d.keys().hasAll(['title', 'type', 'stage', 'dueDate', 'status', 'plantingId'])
+          && d.status in ['pending', 'done', 'postponed'];
+    }
+
+    function isValidTransaction() {
+      let d = request.resource.data;
+      return d.keys().hasAll(['plantingId', 'fieldId', 'kind', 'category',
+                               'amount', 'date'])
+          && d.kind in ['expense', 'income']
+          && d.amount is number && d.amount > 0
+          && d.category in ['seed', 'labour', 'fertilizer', 'pesticide',
+                             'irrigation', 'machinery', 'transport',
+                             'sale', 'subsidy', 'other'];
+    }
+
+    // ── User root (read-only meta, no direct write) ──────────────────────────
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false; // sub-collections only
+
+      // Fields
+      match /fields/{fieldId} {
+        allow read: if isOwner(uid);
+        allow create: if isOwner(uid) && isValidField();
+        allow update: if isOwner(uid) && isValidField();
+        allow delete: if isOwner(uid);
+      }
+
+      // Plantings
+      match /plantings/{plantingId} {
+        allow read: if isOwner(uid);
+        allow create: if isOwner(uid) && isValidPlanting();
+        allow update: if isOwner(uid) && isValidPlanting();
+        allow delete: if isOwner(uid);
+
+        // Tasks (sub-collection of plantings)
+        match /tasks/{taskId} {
+          allow read: if isOwner(uid);
+          allow create: if isOwner(uid) && isValidTask();
+          allow update: if isOwner(uid) && isValidTask();
+          allow delete: if isOwner(uid);
+        }
+      }
+
+      // Transactions
+      match /transactions/{txId} {
+        allow read: if isOwner(uid);
+        allow create: if isOwner(uid) && isValidTransaction();
+        allow update: if false; // transactions are immutable; delete and re-add
+        allow delete: if isOwner(uid);
+      }
+    }
+  }
+}

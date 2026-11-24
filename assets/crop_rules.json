@@ -1,0 +1,227 @@
+[
+  {
+    "cropId": "paddy_ir20",
+    "cropName": "Paddy (IR 20)",
+    "durationDays": 120,
+    "stages": [
+      { "name": "Nursery", "startDay": 0, "endDay": 25 },
+      { "name": "Tillering", "startDay": 26, "endDay": 55 },
+      { "name": "Panicle Initiation", "startDay": 56, "endDay": 85 },
+      { "name": "Ripening & Harvest", "startDay": 86, "endDay": 120 }
+    ],
+    "tasks": [
+      {
+        "id": "paddy_seed_treatment",
+        "stage": "Nursery",
+        "type": "other",
+        "title": "Seed Treatment with Pseudomonas",
+        "notes": "Treat seeds with Pseudomonas fluorescens @ 10g/kg before sowing.",
+        "startDay": 0
+      },
+      {
+        "id": "paddy_nursery_irrigation",
+        "stage": "Nursery",
+        "type": "irrigation",
+        "title": "Nursery Light Irrigation",
+        "notes": "Keep seedbed moist with gentle watering.",
+        "startDay": 2,
+        "repeatEveryDays": 4,
+        "endDay": 24
+      },
+      {
+        "id": "paddy_transplanting",
+        "stage": "Tillering",
+        "type": "other",
+        "title": "Transplanting Seedlings",
+        "notes": "Transplant 2-3 seedlings per hill at 20x10 cm spacing.",
+        "startDay": 25
+      },
+      {
+        "id": "paddy_tillering_fert",
+        "stage": "Tillering",
+        "type": "fertilizer",
+        "title": "First Top Dressing of Nitrogen",
+        "notes": "Apply Urea @ 25 kg/acre during active tillering stage.",
+        "startDay": 40
+      },
+      {
+        "id": "paddy_weed_control",
+        "stage": "Tillering",
+        "type": "weeding",
+        "title": "Hand Weeding / Cono Weeding",
+        "notes": "Perform mechanical or hand weeding to keep field clean.",
+        "startDay": 45
+      },
+      {
+        "id": "paddy_panicle_fert",
+        "stage": "Panicle Initiation",
+        "type": "fertilizer",
+        "title": "Second Top Dressing (N & K)",
+        "notes": "Apply Urea and MOP at panicle initiation stage.",
+        "startDay": 65
+      },
+      {
+        "id": "paddy_protective_spray",
+        "stage": "Panicle Initiation",
+        "type": "spray",
+        "title": "Blast / Stem Borer Protective Spray",
+        "notes": "Foliar spray only if disease incidence noticed. Avoid spray in high winds.",
+        "startDay": 75
+      },
+      {
+        "id": "paddy_drain_water",
+        "stage": "Ripening & Harvest",
+        "type": "irrigation",
+        "title": "Drain Field Water",
+        "notes": "Drain all standing water 10-14 days before harvest.",
+        "startDay": 105
+      },
+      {
+        "id": "paddy_harvest",
+        "stage": "Ripening & Harvest",
+        "type": "other",
+        "title": "Harvest Crop",
+        "notes": "Harvest when 80-85% grains turn straw yellow.",
+        "startDay": 120
+      }
+    ],
+    "soilModifiers": {
+      "clay": 1.2,
+      "loamy": 1.0,
+      "sandy": 0.8
+    },
+    "source": "REPLACE WITH VERIFIED DATA - TNAU Agritech Portal (Crop Production Guide: Paddy)"
+  },
+  {
+    "cropId": "tomato_hybrid",
+    "cropName": "Tomato (Hybrid)",
+    "durationDays": 135,
+    "stages": [
+      { "name": "Nursery & Transplanting", "startDay": 0, "endDay": 30 },
+      { "name": "Vegetative Growth", "startDay": 31, "endDay": 60 },
+      { "name": "Flowering & Fruit Set", "startDay": 61, "endDay": 90 },
+      { "name": "Harvesting", "startDay": 91, "endDay": 135 }
+    ],
+    "tasks": [
+      {
+        "id": "tomato_transplant",
+        "stage": "Nursery & Transplanting",
+        "type": "other",
+        "title": "Transplant Seedlings",
+        "notes": "Transplant 25-30 day old seedlings to main field.",
+        "startDay": 25
+      },
+      {
+        "id": "tomato_veg_irrigation",
+        "stage": "Vegetative Growth",
+        "type": "irrigation",
+        "title": "Drip / Furrow Irrigation",
+        "notes": "Irrigate according to soil moisture and weather conditions.",
+        "startDay": 30,
+        "repeatEveryDays": 6,
+        "endDay": 88
+      },
+      {
+        "id": "tomato_staking",
+        "stage": "Vegetative Growth",
+        "type": "other",
+        "title": "Staking & Trellising",
+        "notes": "Stake indeterminate plants with bamboo or wire supports.",
+        "startDay": 42
+      },
+      {
+        "id": "tomato_foliar_spray",
+        "stage": "Flowering & Fruit Set",
+        "type": "spray",
+        "title": "Micronutrient Foliar Spray",
+        "notes": "Spray Boron and Calcium complex to prevent blossom end rot.",
+        "startDay": 65
+      },
+      {
+        "id": "tomato_first_harvest",
+        "stage": "Harvesting",
+        "type": "other",
+        "title": "First Fruit Harvest",
+        "notes": "Harvest breaker or turning stage fruits for market.",
+        "startDay": 95,
+        "repeatEveryDays": 7,
+        "endDay": 135
+      }
+    ],
+    "soilModifiers": {
+      "clay": 1.2,
+      "loamy": 1.0,
+      "sandy": 0.8
+    },
+    "source": "REPLACE WITH VERIFIED DATA - Kerala Agricultural University (Package of Practices: Vegetables)"
+  },
+  {
+    "cropId": "banana_grand_naine",
+    "cropName": "Banana (Grand Naine)",
+    "durationDays": 330,
+    "stages": [
+      { "name": "Establishment", "startDay": 0, "endDay": 60 },
+      { "name": "Vegetative Phase", "startDay": 61, "endDay": 180 },
+      { "name": "Shooting & Bunch Formation", "startDay": 181, "endDay": 260 },
+      { "name": "Maturation & Harvest", "startDay": 261, "endDay": 330 }
+    ],
+    "tasks": [
+      {
+        "id": "banana_pit_planting",
+        "stage": "Establishment",
+        "type": "other",
+        "title": "Sucker / TC Plant Sowing",
+        "notes": "Plant in 50x50x50 cm pits filled with FYM and topsoil.",
+        "startDay": 0
+      },
+      {
+        "id": "banana_irrigation_sched",
+        "stage": "Vegetative Phase",
+        "type": "irrigation",
+        "title": "Regular Basin / Drip Irrigation",
+        "notes": "Provide 15-20 litres water/plant/day depending on temperature.",
+        "startDay": 10,
+        "repeatEveryDays": 7,
+        "endDay": 280
+      },
+      {
+        "id": "banana_fert_1",
+        "stage": "Vegetative Phase",
+        "type": "fertilizer",
+        "title": "First Dose Fertilization (NPK)",
+        "notes": "Apply Urea 50g, SSP 150g, MOP 50g per plant.",
+        "startDay": 60
+      },
+      {
+        "id": "banana_fert_2",
+        "stage": "Vegetative Phase",
+        "type": "fertilizer",
+        "title": "Second Dose Fertilization",
+        "notes": "Apply Urea 75g and MOP 100g around the drip circle.",
+        "startDay": 120
+      },
+      {
+        "id": "banana_bunch_covering",
+        "stage": "Shooting & Bunch Formation",
+        "type": "other",
+        "title": "Bunch Sleeving and Propping",
+        "notes": "Tie bamboo poles for support and cover bunch with perforated polybags.",
+        "startDay": 220
+      },
+      {
+        "id": "banana_harvest",
+        "stage": "Maturation & Harvest",
+        "type": "other",
+        "title": "Harvest Banana Bunches",
+        "notes": "Harvest bunches when fingers are 3/4th rounded with angular ridges fading.",
+        "startDay": 330
+      }
+    ],
+    "soilModifiers": {
+      "clay": 1.25,
+      "loamy": 1.0,
+      "sandy": 0.75
+    },
+    "source": "REPLACE WITH VERIFIED DATA - ICAR - National Research Centre for Banana (NRCB)"
+  }
+]
